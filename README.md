@@ -71,9 +71,7 @@ python main.py
 | Faculty | Manage attendance, grades, schedules |
 | Student | View personal info, courses, and results |
 
-## 📷 Screenshots
 
-*(Add screenshots of dashboard, student form, attendance page, etc.)*
 
 ## ✅ Future Improvements
 
@@ -89,10 +87,6 @@ This project is open-source and available under the MIT License.
 
 ## 👥 Contributors
 
-* **Nikhil** – Full Stack Developer / Project Lead *(Add team members with roles)*
+* **Nikhil and Dhruv** – Full Stack Developer / Project Lead *(Add team members with roles)*
 
-## 📞 Contact
 
-For queries or contributions, contact:
-📧 nikhil.dev@example.com
-🌐 GitHub Profile
