@@ -99,9 +99,7 @@ cd university-management-system
 
 The role-based access is controlled through the `session['role']` variable after login authentication.
 
-## 📷 Screenshots
 
-*(Key screenshots to be added:)*
 
 1. **Login Screen**
    * User authentication interface
@@ -209,10 +207,5 @@ This project is open-source and available under the MIT License.
 ## 👥 Contributors
 
 * **Nikhil** – Full Stack Developer / Project Lead
-* *(Add team members with roles)*
+* DHRUV*
 
-## 📞 Contact
-
-For queries or contributions, contact:
-📧 nikhil.dev@example.com
-🌐 GitHub Profile
