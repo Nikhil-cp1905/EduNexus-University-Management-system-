@@ -1,0 +1,48 @@
+{% include 'header.html' %}
+<script src="{{ url_for('static',filename='js/library.js') }}"></script>
+<body>
+	{% include 'top_menus.html' %}
+	<div class="container">        
+		{% include 'left_menus.html' %}    
+		<div class="content">
+			<div class="container-fluid">   	
+				<div class="row">
+				<a href="#"><strong><span class="ti-blackboard"></span> Edit Book Deatils</strong></a>
+				<hr>
+				{% for book in books %}
+				<form method="post" id="bookForm" action="{{ url_for('save_book')}}">
+
+					<div class="form-group">
+						<label for="title" class="control-label">Title</label>
+						<input type="text" id="title" name="title" value="{{book.title}}" required>
+					</div>
+					<div class="form-group">
+						<label for="author" class="control-label">Author</label>
+						<input type="text" id="author" name="author" value="{{book.author}}" required>
+					</div>
+					<div class="form-group">
+						<label for="isbn" class="control-label">isbn</label>
+						<input type="text" id="isbn" name="isbn" value="{{book.isbn}}" required>
+					</div>
+					<div class="form-group">
+						<select name="availability" id="availability" class="form-control" required>
+							<option value="">Select Availability</option>
+							<option value="available">available</option>
+							<option value="issued">issued</option>
+						</select>
+					</div>
+					
+					<div class="modal-footer">
+						<input type="hidden" name="book_id" id="book_id" value="{{book.book_id}}" />
+						<input type="hidden" name="action" id="action" value="updateBook" />
+						<input type="submit" name="save" id="save" class="btn btn-info" value="Save" />
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</form>
+				{% endfor %}						
+				</div>	
+			</div>
+		</div>	
+	</div> 
+</body>
+</html>
